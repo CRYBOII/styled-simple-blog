@@ -8,10 +8,12 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     font-size: 1.15em;
     margin: 0;
+    background-color: #fafafc;
   }
   
   * {
     box-sizing: border-box;
+   
   }
 
   a {

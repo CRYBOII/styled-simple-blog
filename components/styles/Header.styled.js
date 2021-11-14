@@ -35,6 +35,15 @@ export const StyledHeader = styled.nav`
     align-items: center;
 
     & > .searchBar {
+      @media screen and (max-width: 640px) {
+        width: 100%;
+        height: auto;
+        max-width: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10;
+      }
       padding-left: 25px;
       flex: 0 0 auto;
       display: flex;
@@ -59,6 +68,16 @@ export const StyledHeader = styled.nav`
           transition: box-shadow 0.3s;
           box-sizing: border-box;
           -webkit-transition: box-shadow 0.3s;
+          @media screen and (max-width: 640px) {
+            background-color: #fefefe;
+            z-index: 3;
+            position: absolute;
+            border-radius: 0 0 15px 15px;
+            padding: 40px 25px 25px 60px;
+            margin-top: -100%;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+          }
         }
 
         & > button {
@@ -73,6 +92,14 @@ export const StyledHeader = styled.nav`
           outline: 0;
           background: transparent;
           cursor: pointer;
+          @media screen and (max-width: 640px) {
+            margin-top: -100%;
+            z-index: 4;
+            height: 18px;
+            left: 20px;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+          }
         }
       }
     }

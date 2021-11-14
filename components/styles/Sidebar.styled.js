@@ -13,6 +13,14 @@ export const StyledSidebar = styled.div`
   overflow: hidden;
   box-shadow: 0 6px 18px 0 rgb(30 30 30 / 4%);
 
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    margin-left: -100%;
+  }
+
   & > .nav-menu {
     padding-bottom: 90px;
     list-style: none;
@@ -66,6 +74,13 @@ export const StyledSidebar = styled.div`
       bottom: 0;
       left: 0;
       padding: 20px 20px 30px 5px;
+
+      @media screen and (max-width: 800px) {
+        max-width: 480px;
+        width: 85%;
+        margin-left: -100%;
+        border-radius: 0 0 10px 0;
+      }
       & ul {
         display: flex;
         list-style: none;
@@ -81,6 +96,44 @@ export const StyledSidebar = styled.div`
         width: 22px;
         height: 22px;
         vertical-align: middle;
+      }
+    }
+  }
+
+  & > .nav-mobile {
+    transition: all 0.1s ease;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 0;
+    bottom: -50px;
+    width: 100%;
+    height: 50px;
+    padding: 0 25px;
+    background-color: transparent;
+    z-index: -1;
+    list-style: none;
+    margin: 0;
+    display: flex;
+
+    @media screen and (max-width: 640px) {
+      background-color: #fefefe;
+      box-shadow: 0 -10px 20px 0 rgb(30 30 30 / 10%);
+      bottom: 0;
+    }
+
+    & > li.svg {
+      position: absolute;
+      width: 100%;
+      top: -28px;
+      display: block;
+      & > svg {
+        @media screen and (max-width: 640px) {
+          width: 100%;
+          height: 36px;
+
+          fill: #fefefe;
+        }
       }
     }
   }

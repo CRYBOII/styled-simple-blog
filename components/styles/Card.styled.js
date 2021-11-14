@@ -58,7 +58,7 @@ export const PostCard = styled.article`
 
     & p {
       font-size: inherit;
-      line-height: 0.3em;
+      line-height: 1em;
       font-size: 11px;
     }
   }

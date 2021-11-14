@@ -1,9 +1,13 @@
 import {
   Calling,
   Category,
+  ChevronUpCircle,
   Document,
   Folder,
+  Home,
   Lock,
+  Search,
+  Send,
   ShieldDone,
   User,
 } from "react-iconly"
@@ -145,6 +149,55 @@ const Sidebar = () => {
               </a>
             </li>
           </ul>
+        </li>
+      </ul>
+      <ul className='nav-mobile'>
+        <li>
+          <Home set='broken' />
+        </li>
+        <li>
+          <Search set='broken' />
+        </li>
+        <li>
+          <Category set='broken' />
+        </li>
+        <li>
+          <Send set='broken' />
+        </li>
+        <li>
+          <ChevronUpCircle set='broken' />
+        </li>
+        <li className='svg'>
+          <svg
+            class='landing-bg'
+            fill='none'
+            height='36'
+            viewBox='0 0 1440 36'
+            width='1440'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <g id='mask'>
+              <mask
+                height='258'
+                id='mask0'
+                mask-type='alpha'
+                maskUnits='userSpaceOnUse'
+                width='2739'
+                x='-651'
+                y='-1'
+              >
+                <path
+                  clip-rule='evenodd'
+                  d='M1440.08 94.7682C1840.62 52.9509 2088 327.189 2088 239.643C2088 107.292 1474.85 -0.00012207 718.5 -0.00012207C454.994 -0.00012207 208.87 13.4321 0 36C-390.66 78.2098 -651 153.401 -651 239.643C-651 324.848 -395.883 48.847 -13.028 91.3391L-18.0044 157.143H1435.1L1440.08 94.7682Z'
+                  fill-rule='evenodd'
+                  id='mask_2'
+                ></path>
+              </mask>
+              <g mask='url(#mask0)'>
+                <rect height='161' id='bg' width='1440' y='-0.00012207'></rect>
+              </g>
+            </g>
+          </svg>
         </li>
       </ul>
     </StyledSidebar>
